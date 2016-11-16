@@ -1,0 +1,6 @@
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/obj/x86/Debug/Lab4_matlogic.gtk-gui.gui.stetic
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/bin/Debug/Lab4_matlogic.exe.mdb
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/bin/Debug/Lab4_matlogic.exe
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/obj/x86/Debug/Lab4_matlogic.exe
+/Users/yurabraiko/dev/C#/Lab4_matlogic/Lab4_matlogic/obj/x86/Debug/Lab4_matlogic.exe.mdb
