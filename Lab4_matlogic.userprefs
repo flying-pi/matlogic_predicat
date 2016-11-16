@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Lab4__matlogic PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Lab4_matlogic/MainWindow.cs">
     <Files>
-      <File FileName="Lab4_matlogic/MainWindow.cs" Line="76" Column="50" />
-      <File FileName="Lab4_matlogic/gtk-gui/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Lab4_matlogic/MainWindow.cs" Line="83" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

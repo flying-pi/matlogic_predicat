@@ -64,6 +64,16 @@ public partial class MainWindow : Gtk.Window
 				result.Add(i);
 		return result;
 	}
+	protected List<int> diff(List<int> a, List<int> b)
+	{
+		List<int> result = new List<int>();
+		List<int> source = a.Count > b.Count ? a : b;
+		List<int> second = a.Count < b.Count ? a : b;
+		foreach (int i in source)
+			if (!second.Contains(i))
+				result.Add(i);
+		return result;
+	}
 
 	protected void onCalcClick(object sender, EventArgs a)
 	{
@@ -71,9 +81,10 @@ public partial class MainWindow : Gtk.Window
 		int to = int.Parse(this.mField.Text);
 		var first = generateTrinagleNum(from, to);
 		var second = getmagicNum(from, to);
-		triangleResult.Text = first.stringify();
-		magicResult.Text = second.stringify();
-		result.Text = merge(first, second).stringify();
+		triangleResult.Text = "P1+ \t:: "+first.stringify();
+		magicResult.Text = "P2+ \t:: " + second.stringify();
+		result.Text = "P+ \t\t:: " + merge(first, second).stringify();
+		UnP.Text = "!P \t\t:: " + diff(first, second).stringify();
 	}
 
 }

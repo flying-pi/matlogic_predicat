@@ -21,6 +21,8 @@ public partial class MainWindow
 
 	private global::Gtk.Label result;
 
+	private global::Gtk.Label UnP;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -73,18 +75,18 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.magicResult = new global::Gtk.Label();
 		this.magicResult.Name = "magicResult";
-		this.magicResult.LabelProp = global::Mono.Unix.Catalog.GetString("label3");
 		this.fixed1.Add(this.magicResult);
 		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.magicResult]));
 		w5.X = 5;
 		w5.Y = 40;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.button = new global::Gtk.Button();
+		this.button.WidthRequest = 95;
 		this.button.CanFocus = true;
 		this.button.Events = ((global::Gdk.EventMask)(256));
 		this.button.Name = "button";
 		this.button.UseUnderline = true;
-		this.button.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
+		this.button.Label = global::Mono.Unix.Catalog.GetString("Run");
 		this.fixed1.Add(this.button);
 		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button]));
 		w6.X = 325;
@@ -92,7 +94,6 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.triangleResult = new global::Gtk.Label();
 		this.triangleResult.Name = "triangleResult";
-		this.triangleResult.LabelProp = global::Mono.Unix.Catalog.GetString("label4");
 		this.fixed1.Add(this.triangleResult);
 		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.triangleResult]));
 		w7.X = 5;
@@ -100,17 +101,23 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.result = new global::Gtk.Label();
 		this.result.Name = "result";
-		this.result.LabelProp = global::Mono.Unix.Catalog.GetString("label5");
 		this.fixed1.Add(this.result);
 		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.result]));
 		w8.X = 5;
 		w8.Y = 70;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.UnP = new global::Gtk.Label();
+		this.UnP.Name = "UnP";
+		this.fixed1.Add(this.UnP);
+		global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.UnP]));
+		w9.X = 5;
+		w9.Y = 85;
 		this.Add(this.fixed1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 400;
+		this.DefaultWidth = 425;
 		this.DefaultHeight = 300;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
