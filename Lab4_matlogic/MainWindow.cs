@@ -45,7 +45,7 @@ public partial class MainWindow : Gtk.Window
 	protected List<int> getmagicNum(int from, int to)
 	{
 		List<int> result = new List<int>();
-		for (int i = from; i < to; i++)
+		for (int i = from; i <= to; i++)
 		{
 			if (isMagic(i))
 				result.Add(i);
@@ -83,8 +83,12 @@ public partial class MainWindow : Gtk.Window
 		var second = getmagicNum(from, to);
 		triangleResult.Text = "P1+ \t:: "+first.stringify();
 		magicResult.Text = "P2+ \t:: " + second.stringify();
+		List<int> first1 = merge(first, second);
 		result.Text = "P+ \t\t:: " + merge(first, second).stringify();
-		UnP.Text = "!P \t\t:: " + diff(first, second).stringify();
+		List<int> all = new List<int>();
+		for (int i = from; i <= to; i++)
+			all.Add(i);
+		UnP.Text = "!P \t\t:: " + diff(all, first1).stringify();
 	}
 
 }
